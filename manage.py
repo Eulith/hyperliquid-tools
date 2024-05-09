@@ -50,7 +50,7 @@ def deposit(amount):
             'gas': 1000000
         })
         h = ew3.eth.send_transaction(transfer_tx)
-        print(f"Deposit tx hash: {h}")
+        print(f"Deposit tx: https://arbiscan.io/tx/{h.hex()}")
 
 
 @manage.command()
